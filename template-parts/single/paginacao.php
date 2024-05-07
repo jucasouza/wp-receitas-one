@@ -33,7 +33,7 @@
             ?>
     </div>
     <div class="next-post">
-    <?php $args = array( 'post_type' => 'post', 'posts_per_page'   => 1, 'order' => 'random');
+    <?php $args = array( 'post_type' => 'post', 'posts_per_page'   => 1, 'order' => 'ASC');
             $blog_posts = new WP_Query($args);
 
             if ($blog_posts->have_posts()) :
