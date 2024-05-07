@@ -11,9 +11,9 @@ get_header();
 <?php get_template_part('template-parts/home/recipe-home'); ?>
 <!-- Recipe Home -->
 <!-- Trending recipe -->
-<?php get_template_part('template-parts/home/trending-recipe'); ?>
+<!--<?php get_template_part('template-parts/home/trending-recipe'); ?>-->
 <!-- Trending recipe -->
 <!-- Recipe Home2 -->
-<?php get_template_part('template-parts/home/recipe-home-2'); ?>
+<!--<?php get_template_part('template-parts/home/recipe-home-2'); ?>-->
 <!-- Recipe Home2 -->
 <?php get_footer(); ?>
