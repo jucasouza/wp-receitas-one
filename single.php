@@ -36,15 +36,10 @@ if (have_posts()) : while (have_posts()) : the_post();
                             <li class="single-meta"><i class="far fa-calendar-alt"></i> <?php echo get_the_date(); ?></li>
                             <li class="single-meta"><i class="fas fa-user"></i> <span><?php the_author_posts_link(); ?></span></li>
                             <li class="single-meta">
-                                <ul class="item-rating">
-                                    <li class="star-fill"><i class="fas fa-star"></i></li>
-                                    <li class="star-fill"><i class="fas fa-star"></i></li>
-                                    <li class="star-fill"><i class="fas fa-star"></i></li>
-                                    <li class="star-fill"><i class="fas fa-star"></i></li>
-                                    <li class="star-empty"><i class="fas fa-star"></i></li>
-                                    <li><span>9<span> / 10</span></span> </li>
-                                </ul>
-                            </li>                           
+                                <!-- estrelas rating -->
+                                <?php get_template_part('template-parts/estrelas/rating'); ?>
+                                <!-- /estrelas rating -->
+                            </li>
                         </ul>
                         <ul class="action-item">
                             <li class="action-share-hover"><button><i class="fas fa-share-alt"></i></button>
@@ -55,7 +50,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                                     <a href="https://api.whatsapp.com/send?text=<?php the_permalink(); ?>" title="wahtasapp"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </li>
-                            
+
                             <li><button><!--<i class="fas fa-print"></i>--></button></li>
                             <li><button><!--<i class="fas fa-expand-arrows-alt"></i>--></button></li>
                         </ul>

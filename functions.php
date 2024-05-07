@@ -63,6 +63,8 @@ add_image_size('bloghomeone', 530, 572, true);
 add_image_size( 'latest', 90, 90, true );
 add_image_size( 'blog-single', 1920, 624, true );
 add_image_size( 'preview-pgncao', 168, 130, true );
+add_image_size( 'recipe-about', 530, 390, true );
+add_image_size( 'pages-all', 810, 494, true );
 
 if ( ! isset( $content_width ) ) {
     $content_width = 600;
