@@ -5,9 +5,9 @@
                 <div class="breadcrumbs-area">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                        <a href="<?php echo home_url('/'); ?>">Home</a>
                         </li>
-                        <li>Recipe Details</li>
+                        <li><?php the_title(); ?></li>
                     </ul>
                 </div>
             </div>

@@ -25,7 +25,7 @@ get_header();
                         <li>
                             <a href="<?php echo home_url('/'); ?>">Home</a>
                         </li>
-                        <li>Pesquisa</li>
+                        <li><?php the_title(); ?></li>
                     </ul>
                     
                 </div>

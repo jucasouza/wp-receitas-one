@@ -44,10 +44,10 @@ if (have_posts()) : while (have_posts()) : the_post();
                         <ul class="action-item">
                             <li class="action-share-hover"><button><i class="fas fa-share-alt"></i></button>
                                 <div class="action-share-wrap">
-                                    <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" title="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>" title="twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="https://api.whatsapp.com/send?text=<?php the_permalink(); ?>" title="wahtasapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>" target="_blank" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://api.whatsapp.com/send?text=<?php the_permalink(); ?>" target="_blank" title="wahtasapp"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </li>
 

@@ -4,10 +4,10 @@
             <div class="col-lg-4 d-none d-lg-block">
                 <div class="nav-action-elements-layout2">
                     <ul class="nav-social">
-                        <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a href="#" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/descomplicandoreceitasofic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://br.pinterest.com/descomplicandoreceitas/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/descomplicandoreceitasofic" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://descomplicandoreceitas.com.br/grupo-whatsapp" target="_blank" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -28,7 +28,7 @@ get_header();
                         </li>
                         <li>Pesquisa</li>
                     </ul>
-                    <h3>Resultado: <?php echo get_search_query(); ?></h3>
+                    <h3>Resultado: <?php the_title(); ?></h3>
                 </div>
             </div>
         </div>
