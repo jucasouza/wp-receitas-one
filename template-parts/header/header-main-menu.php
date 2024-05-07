@@ -3,159 +3,29 @@
         <div class="row">
             <div class="col-lg-8 col-md-3 col-sm-4 col-4 possition-static">
                 <div class="site-logo-mobile">
-                    <a href="index.html" class="sticky-logo-light"><img src="img/logo-light.png" alt="Site Logo"></a>
-                    <a href="index.html" class="sticky-logo-dark"><img src="img/logo-dark.png" alt="Site Logo"></a>
+                    <a href="index.html" class="sticky-logo-light"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-descomplicando-receitas.webp" alt="Descomplicando Receitas"></a>
+                    <a href="index.html" class="sticky-logo-dark"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-descomplicando-receitas.webp" alt="Descomplicando Receitas"></a>
                 </div>
-                <nav class="site-nav">                        
-                <ul id="site-menu" class="site-menu">
-                                    <li><a href="#">Home</a>
-                                        <ul class="dropdown-menu-col-1">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index2.html">Home 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="category.html">Category</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Recipes</a>
-                                        <ul class="dropdown-menu-col-1">
-                                            <li>
-                                                <a href="recipe-with-sidebar.html">Recipes With Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="recipe-without-sidebar.html">Recipes Without Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-recipe1.html">Single Recipe 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-recipe2.html">Single Recipe 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="possition-static hide-on-mobile-menu">
-                                        <a href="#">Pages</a>
-                                        <div class="template-mega-menu">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="menu-ctg-title">Home</div>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="index.html">
-                                                                    <i class="fas fa-home"></i>Home 1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index2.html">
-                                                                    <i class="fas fa-home"></i>Home 2</a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="menu-ctg-title">Recipes</div>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="recipe-with-sidebar.html"><i class="fas fa-utensils"></i>Recipes
-                                                                    With Sidebar</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="recipe-without-sidebar.html"><i class="fas fa-utensils"></i>Recipes
-                                                                    Without
-                                                                    Sidebar</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="single-recipe1.html"><i class="fas fa-utensils"></i>Single
-                                                                    Recipe 1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="single-recipe2.html"><i class="fas fa-utensils"></i>Single
-                                                                    Recipe 2</a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="menu-ctg-title">Other Pages</div>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="about.html"><i class="fab fa-cloudversify"></i>About</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="author.html"><i class="fas fa-user"></i>Author</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="single-author.html"><i class="fas fa-user"></i>Author
-                                                                    Details</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="submit-recipe.html"><i class="far fa-share-square"></i>Submit
-                                                                    Recipe</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="login.html"><i class="fas fa-lock"></i>Login</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="404.html"><i class="fas fa-exclamation-triangle"></i>404
-                                                                    Error</a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="menu-ctg-title">Shop</div>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="single-shop.html"><i class="fas fa-shopping-cart"></i>Shop
-                                                                    Details</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="hide-on-desktop-menu">
-                                        <a href="#">Pages</a>
-                                        <ul class="dropdown-menu-col-1">
-                                            <li>
-                                                <a href="about.html">About</a>
-                                            </li>
-                                            <li>
-                                                <a href="author.html">Author</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-author.html">Author Details</a>
-                                            </li>
-                                            <li>
-                                                <a href="submit-recipe.html">Submit Recipe</a>
-                                            </li>
-                                            <li>
-                                                <a href="login.html">Login</a>
-                                            </li>
-                                            <li>
-                                                <a href="login.html">404 Error</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog</a>
-                                        <ul class="dropdown-menu-col-1">
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-list.html">Blog List</a></li>
-                                            <li><a href="single-blog.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Shop</a>
-                                        <ul class="dropdown-menu-col-1">
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="single-shop.html">Shop Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>   
+                <nav class="site-nav">
+                    <ul id="site-menu" class="site-menu">
+                        <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
+                        <li><a href="<?php echo home_url('/'); ?>/receitas/do-chef">Do Chef</a></li>
+                        <li><a href="<?php echo home_url('/'); ?>/receitas/bolos-e-tortas">Bolos e tortas</a></li>
+                        <li><a href="<?php echo home_url('/'); ?>/receitas/doces-e-sobremesas">Doces e Sobremesas</a></li>
+                        <li><a href="<?php echo home_url('/'); ?>/receitas/carnes">Carnes</a></li>
+                        <li>
+                            <a href="#">+ Receitas</a>
+                            <ul class="dropdown-menu-col-1">
+                                
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/culinaria-asiaticas">Culinária Asiáticas</a></li>
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/peixes-e-frutos-do-mar">Peixes e Frutos do Mar</a></li>
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/lanches">Lanches</a></li>
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/massas">Massas</a></li>
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/sapas-e-caldos">Spas e Caldos</a></li>
+                                <li><a href="<?php echo home_url('/'); ?>/receitas/receitas-veganas">Receitas Veganas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
             </div>
             <div class="col-lg-4 col-md-9 col-sm-8 col-8 d-flex align-items-center justify-content-end">
