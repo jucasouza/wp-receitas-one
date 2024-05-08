@@ -4,21 +4,21 @@
                 <div class="row gutters-60">
                     <div class="col-lg-8">
                         <div class="section-heading heading-dark">
-                            <h2 class="item-heading">TOPs RECEITAS</h2>
+                            <h2 class="item-heading">TOP RECEITAS</h2>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <?php
                                 $args = array(
-                                    'post-type' => 'post',
+                                    'post-type'     => 'post',
                                     'post_per_page' => 1,
-                                    'category_in' => array(63, 1086, 324),
-                                    'orderby' => 'rand'
+                                    'category_in'   => array(63, 1086, 324),
+                                    'meta_key'      => 'post_views_count',
+                                    'orderby'       => 'meta_value_num',
+                                    'order'         => 'DESC'
                                 );
-                                $postlist = new WP_Query($args);
-
-                                if ($postlist->have_posts()) :
-                                    while ($postlist->have_posts()) : $postlist->the_post();
+                                $my_posts = get_posts($args);
+                                if ($my_posts) : foreach ($my_posts as $post) : setup_postdata($post);
                                 ?>
                                         <div class="product-box-layout1">
                                             <figure class="item-figure"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('pages-all-two'); ?></a></figure>
@@ -35,25 +35,24 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    <?php endwhile;
+                                <?php
+                                    endforeach;
                                     wp_reset_postdata();
-                                else : ?>
-                                    <p>Nenhuma Receita Encontrada!</p>
-                                <?php endif; ?>
+                                else:?>
+                                <p>Nenhuma receita encontrada!</p>
+                                <?php
+                                endif;
+                                ?>
                             </div>
                             <?php
                             $args = array(
                                 'post-type' => 'post',
                                 'post_per_page' => 6,
-                                'category_name' => array(292, 26, 53, 319, 18, 695),
+                                'category_in' => array(292, 26, 53, 319, 18, 695),
                                 'orderby' => 'rand'
                             );
-                            $postlist = new WP_Query($args);
-
-                            if ($postlist->have_posts()) :
-                                while ($postlist->have_posts()) : $postlist->the_post();
-                            ?>
-
+                            $postlist = get_posts($args);
+                            if ($postlist) : foreach ($postlist as $post) : setup_postdata($post); ?>
                                     <div class="col-md-6 col-sm-6 col-12">
                                         <div class="product-box-layout1">
                                             <figure class="item-figure"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('pages-all-tree'); ?></a></figure>
@@ -71,11 +70,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                <?php endwhile;
-                                wp_reset_postdata();
-                            else : ?>
-                                <p>Nenhuma Receita Encontrada!</p>
-                            <?php endif; ?>
+                                    <?php
+                                    endforeach;
+                                    wp_reset_postdata();
+                                else:?>
+                                <p>Nenhuma receita encontrada!</p>
+                                <?php
+                                endif;
+                                ?>
 
                         </div>
                         <!-- Ads Home One -->

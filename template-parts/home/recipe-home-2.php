@@ -13,11 +13,8 @@
                         'orderby'       => 'meta_value_num',
                         'order'         => 'DESC'
                     );
-                    $postlist = new WP_Query($args);
-
-                    if ($postlist->have_posts()) :
-                        while ($postlist->have_posts()) : $postlist->the_post();
-                    ?>
+                    $my_posts = get_posts($args);
+                    if ($my_posts) : foreach ($my_posts as $post) : setup_postdata($post); ?>
                             <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div class="product-box-layout2">
                                     <figure class="item-figure"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('bloghomeone'); ?></a></figure>
@@ -35,11 +32,10 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endwhile;
-                        wp_reset_postdata();
-                    else : ?>
-                        <p>Nenhuma Receita Encontrada!</p>
-                    <?php endif; ?>
+                    <?php
+                        endforeach;
+                    endif;
+                    ?>
                 </div>
             </div>
         </section>
