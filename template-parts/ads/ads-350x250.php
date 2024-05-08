@@ -1,5 +1,17 @@
 <div class="widget">
     <div class="widget-ad">
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/figure/figure6.jpg" alt="Ad" class="img-fluid"></a>
+		<p style="text-align: center;">Publicidade</p>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7381677975479553"
+     crossorigin="anonymous"></script>
+<!-- [01][ADS] Display Quadrado -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7381677975479553"
+     data-ad-slot="6771375299"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
 </div>

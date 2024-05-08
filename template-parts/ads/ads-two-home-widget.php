@@ -1,5 +1,11 @@
 <div class="widget">
     <div class="widget-ad">
-        <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/figure/figure2.jpg" alt="Ad" class="img-fluid"></a>
+        <div class="widget">
+    <div class="widget-ad">
+		<p style="text-align: center;">Publicidade</p>
+   <div class="ad-unit" data-bloco="Content1" data-mobile="0"></div>
+              <div class="ad-unit" data-bloco="Content1" data-mobile="1"></div>
+    </div>
+</div>
     </div>
 </div>
