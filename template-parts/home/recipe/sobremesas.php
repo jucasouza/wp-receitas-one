@@ -1,6 +1,6 @@
 <div class="widget">
     <div class="section-heading heading-dark">
-        <h3 class="item-heading">SOPAS & CALDOS</h3>
+        <h3 class="item-heading">SOBREMESAS</h3>
     </div>
     <div class="widget-latest">
         <ul class="block-list">
@@ -8,7 +8,7 @@
             $args = array(
                 'post_type' => 'post',
                 'showposts' => 7,
-                'cat' => 'do-chef',
+                'cat' => 'doces-e-sobremesas',
                 'order' => 'random'
             );
             $my_posts = get_posts($args);

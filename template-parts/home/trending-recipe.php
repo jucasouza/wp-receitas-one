@@ -89,7 +89,7 @@
                         <!--<?php get_template_part('template-parts/home/sobre'); ?>-->
                         <!-- /sobre -->
                         <!-- sopas -->
-                        <?php get_template_part('template-parts/home/recipe/sopa'); ?>
+                        <?php get_template_part('template-parts/home/recipe/sobremesas'); ?>
                         <!-- /sopas -->
                         <!-- ads-two-home-widget -->
                         <?php get_template_part('template-parts/ads/ads-two-home-widget'); ?>
